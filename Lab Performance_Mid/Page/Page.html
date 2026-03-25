@@ -1,51 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Product Management Page</title>
-    <link rel="stylesheet"  href="../Design/Style.css">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="../Design/Style.css">
 </head>
- 
+
 <body>
-     
-    <div class="box">
-       
-        <h2>Product Management Page</h2>
  
-        <table>
-            <tr>
-                <td>Unit Price:</td>
-            </tr>
+<div class="container">
+    <form>
+        <fieldset>
+            <legend>Product Management Page</legend>
+
+            <p><strong>Unit Price:</strong> 1000</p>
+
+            <label>Quantity per Day:</label>
+            <input type="number" id="quantity" value="0">
+            <br><br>
+
+            <label>Total Price for 30 Days:</label>
+            <input type="text" id="totalPrice" value="0" readonly>
+
+        </fieldset>
+    </form>
+</div>
  
-            <tr>
-                <td>
-                <input type="text" value="1000" readonly>
-                </td>
-            </tr>
- 
-            <tr>
-                <td>Quantity Per Day:</td>
-            </tr>
- 
-            <tr>
-                <td>
-                    <input type="number" id="quantity" min="0" placeholder="Enter quantity">
-                </td>
-            </tr>
- 
-            <tr>
-                <td>Total Price for 30 Days:</td>
-            </tr>
- 
-            <tr>
-                <td>
-                    <input type="number" id="totalPrice" readonly>
-                </td>
-            </tr>
- 
- 
-        </table>
-    </div>
- 
-    <script src="../JS/Validation.script"></script>
+
+<script src="../JS/Validation.js"></script>
+
 </body>
 </html>

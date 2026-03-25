@@ -1,22 +1,29 @@
 body{
-    font-family: Arial, Helvetica, sans-serif; 
-    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    text-align:center;
+    margin:0;
+}
+ 
+.container{
+    margin-top:40px;
 }
 
-.box{
-    width: 280px;
-    margin: 120px auto;
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 8px;
-    background-color: white;
+fieldset{
+    width:500px;
+    margin:0 auto;
+    padding:50px;
+    border:2px solid black;
+    border-radius: 20px;
 }
 
-h3{
-    text-align: center;
+legend{
+    font-weight:bold;
+    text-align:left;
 }
 
 input{
-    width: 100%;
-    padding: 5px;
+    padding:8px;
+    width:300px;
+    border-radius: 10px;
 }
+ 
