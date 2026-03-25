@@ -1,0 +1,25 @@
+var price = 1000;
+var days = 30;
+
+var q = document.getElementById("quantity");
+var total = document.getElementById("total");
+
+q.addEventListener("input", function(){
+
+    var quantity = q.value;
+
+    if(quantity < 0){
+        alert("Quantity cannot be less than 0");
+        q.value = 0;
+        quantity = 0;
+    }
+
+    var result = price * quantity * days;
+
+    total.value = result;
+
+    if(result > 1000){
+        alert("You will get a gift coupon!");
+    }
+
+});
